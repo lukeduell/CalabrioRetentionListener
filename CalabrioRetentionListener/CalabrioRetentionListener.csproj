@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>8d9c74f3-f986-4e23-bef0-6fb1c5c5d6e1</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Axiom.Configuration.RestApi" Version="1.1.0" />
+    <PackageReference Include="Axiom.Configuration.RestApi.OAuth" Version="1.0.1" />
+    <PackageReference Include="Axiom.Configuration.Switching" Version="1.0.1" />
+    <PackageReference Include="CommunicationCompliance.Metrics" Version="7.0.0" />
+    <PackageReference Include="Confluent.Kafka" Version="2.5.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Toolkit.Services" Version="6.1.1" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.12" />
+    <PackageReference Include="NLog.Web" Version="5.3.12" />
+    <PackageReference Include="RockLib.Configuration" Version="4.0.1" />
+    <PackageReference Include="RockLib.Logging" Version="5.1.1" />
+    <PackageReference Include="RockLib.Logging.Internal" Version="6.2.1" />
+    <PackageReference Include="RockLib.Messaging" Version="4.0.1" />
+    <PackageReference Include="RockLib.Messaging.Kafka" Version="3.0.1" />
+    <PackageReference Include="RockLib.Metrics" Version="5.0.0" />
+    <PackageReference Include="RockLib.Metrics.Messaging" Version="3.1.0" />
+    <PackageReference Include="RockLib.Metrics.Messaging.Kafka" Version="1.1.0" />
+    <PackageReference Include="RockLib.Metrics.RestSharp" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ApplicationSettings.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="IApplicationSettings.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
